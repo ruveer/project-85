@@ -3,7 +3,8 @@ ctx = canvas.getContext("2d");
 
 background_image = "parkingLot.jpg";
 greencar_image = "car2.png";
-
+greencar_width = 75; 
+greencar_height = 100;
 greencar_x = 5;
 greencar_y = 225;
 
@@ -74,7 +75,7 @@ function up()
 
 function down()
 {
-	if(greencar_y <=0){
+	if(greencar_y <=350){
 		greencar_y = greencar_y + 10;
 		console.log("When down arrow is pressed, x = " + greencar_x + "| y = " +greencar_y);
 		uploadBackground();
@@ -94,7 +95,7 @@ function left()
 
 function right()
 {
-	if(greencar_x <=0){
+	if(greencar_x <=750){
 		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed, x = " + greencar_x + "| y = " +greencar_y);
 		uploadBackground();
